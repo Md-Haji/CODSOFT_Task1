@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c2c2c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color:  #FFB6C1;  /* Dark pink */
+            color: black;               /* White text */
+            border-radius: 8px;
+        }
+
+        /* About Section */
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Skills & Projects */
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill, .project {
+            background:  #2c2c2c; /* Black background */
+            color: #ffffff;      /* White text */
+            padding: 40px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Resume */
+        .resume a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        /* Contact */
+        #contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color:  #2c2c2c;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .skills, .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Md Haji</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <img src="your-photo.jpg" alt="Md Haji" />
+    <p>Hello! I'm a passionate web developer skilled in building responsive websites and engaging user interfaces. I enjoy writing clean, efficient code and creating smooth user experiences.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill"><h3>HTML</h3></div>
+        <div class="skill"><h3>CSS</h3></div>
+        <div class="skill"><h3>JavaScript</h3></div>
+        <div class="skill"><h3>React</h3></div>
+        <div class="skill"><h3>Design</h3></div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>ATM Interface</h3>
+            <img src="project1.jpg" alt="Project One" style="width:100%; border-radius: 8px;">
+            <p>The ATM Interface project simulates basic banking operations like balance check, deposit, and withdrawal. It allows users to interact with an ATM system through a secure, menu-driven interface..</p>
+        </div>
+        <div class="project">
+            <h3>Weather Forecast</h3>
+            <img src="project2.jpg" alt="Project Two" style="width:100%; border-radius: 8px;">
+            <p>The Weather Forecast project provides real-time weather updates for any location using API data. It displays temperature, humidity, wind speed, and weather conditions in a user-friendly interface.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume">
+    <h2>Resume</h2>
+    <a href="your-resume.pdf" target="_blank" class="resume">Download My Resume</a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+     <p><i class="fas fa-envelope"></i>Email: mansurihaji47@gmail.com</p>
+     <p><i class="fas fa-phone"></i>Phone: 9122890086</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Md Haji All rights reserved.</p>
+</footer>
+
+</body>
+</html>
